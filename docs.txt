@@ -20,7 +20,7 @@ UNITY PART
 		- Main Camera: what the user sees when the scene is run
 		- Canvas: this is basically a plate you build all the visuals/other GameObjects off of
 		- EventSystem: this allows things like buttons to work
-	You can think of scenes like a web page. We'll probably need at least a "login" scene, a "create event" scene, and a "calendar view" scene.
+	You can think of scenes like a web page. We'll probably need at least a "login" scene, a "create/edit event" scene, and a "calendar view" scene.
 	When you create a new scene, always save it in the /calendar_ui/Assets/Scenes/
 	
 	GameObjects are fairly static. In order to make them change/move/interactable, you have to write a C# script.
