@@ -545,6 +545,7 @@ GameObject:
   m_Component:
   - component: {fileID: 683847745}
   - component: {fileID: 683847744}
+  - component: {fileID: 683847746}
   m_Layer: 0
   m_Name: TextManager
   m_TagString: Untagged
@@ -567,7 +568,6 @@ MonoBehaviour:
   date: {fileID: 914602125}
   start_time: {fileID: 1447810241}
   end_time: {fileID: 1284209162}
-  TitleText: {fileID: 710174515}
 --- !u!4 &683847745
 Transform:
   m_ObjectHideFlags: 0
@@ -581,6 +581,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &683847746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 683847743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60574fd92ec783542acbcff454255494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &710174513
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,7 +1029,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1127867317}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 683847746}
+        m_MethodName: Return_to_calendar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1127867317
